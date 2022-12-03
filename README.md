@@ -76,46 +76,53 @@ The DHT11 is a simple temperature sensor that is using a single wire to communic
 
 ## Getting Started
 
-<!--
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
--->
+
 
 ### Prerequisites
 
-<!--
+- Hardware
+  - ESP8266
+  - SIM800L
+  - DHT11
+  - USB ( for the ESP8266 )
+  - Jumper wires
+  - Breadboard (optional but recommended)
+- Software
+  - Arduino IDE
+  - Arduino ESP8266 Core
+  - DHT Sensor Library
 
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-
-```sh
-npm install npm@latest -g
-```
--->
 
 ### Installation
 
-<!--
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+Clone the repo
 
 ```sh
-git clone https://github.com/your_username_/Project-Name.git
+git clone git@github.com:stiliajohny/hardware-sms-temperature-sensor.git
 ```
 
-3. Install NPM packages
+Then open the project in the Arduino IDE make some edits as follows:
 
-```sh
-npm install
+- In the SIM800L_DHT.ino file change the phone number to your phone number:
+
+> The number needs to follow the international format. For example: +447123456789
+
+```c
+const String PHONE = "+447572785067";
 ```
 
-4. Enter your API in `config.js`
+- In the SIM800L_DHT.ino file change the serial baud rate to the one that you are using:
+> The SIM800L module is using 9600 baud rate by default. If you are using a different baud rate you need to change it in the code.
 
-```JS
-const API_KEY = 'ENTER YOUR API';
+> The default baud rate for the ESP8266 is 115200
+
+
+```c
+int SerialBaudRate = 115200;
+int sms800BaudRate = 9600;
 ```
--->
+
+
 
 ---
 
@@ -123,15 +130,33 @@ const API_KEY = 'ENTER YOUR API';
 
 ## Usage
 
-<!--
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+After uploading the codet othe ESP8266 you can connect to the serial port and see the output of the device.
+Now you need to observe the reception LED on the SIM800L module.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
--->
+<!-- add an HTML table with no borders -->
 
----
+<table border=0>
+  <tr >
+    <td align="center"><img src="./.assets/Netlight-LED-Blinking-Finding-Network-Connection.gif" alt="Reception LED" width="200" height="200"></td>
+    <td align="center"><img src="./.assets/Netlight-LED-Blinking-Active-GPRS-Connection.gif" alt="SMS" width="200" height="200"></td>
+    <td align="center"><img src="./.assets/Netlight-LED-Blinking-Network-Connection-Established.gif" alt="SMS" width="200" height="200"></td>
+  </tr>
+  <tr>
+    <td align="center">The module is running but the connection to the cellular network has not yet been made.</td>
+    <td align="center">The GPRS data connection you requested is active.</td>
+    <td align="center">The module has made contact with the cellular network and can send/receive voice and SMS.</td>
+</table>
 
-<!-- ROADMAP -->
+
+After the device is connected to the cellular network you can send an SMS to the device with the following message:
+```
+get temperature
+```
+
+The device will reply back with the current temperature and humidity.
+
+<img src="./.assets/sms-respond.jpeg" width=50%>
+
 
 ## Roadmap
 
