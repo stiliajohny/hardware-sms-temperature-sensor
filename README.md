@@ -49,8 +49,7 @@
 ## About The Project
 
 
-<!-- add css that makes the corners rounded  -->
-
+[![Product Name Screen Shot][product-screenshot]](./.assets/screenshot.png)
 
 This project is a POC  while researching for a bigger project that will be a GPS tracker.
 The idea is to have a device that will be able to send SMS messages with the current temperature and humidity of the place where it is installed.
