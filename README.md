@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/stiliajohny/hardware-sms-temperature-sensor">
-    <img src="https://raw.githubusercontent.com/stiliajohny/hardware-sms-temperature-sensor/main/.assets/logo.png" alt="Main Logo" width="80" height="80">
+    <img src="https://github.com/stiliajohny/hardware-sms-temperature-sensor/raw/master/.assets/logo.png" alt="Main Logo" width="80" height="80">
   </a>
 
   <h3 align="center">hardware-sms-temperature-sensor</h3>
@@ -190,9 +190,7 @@ Distributed under the GPLv3 License. See `LICENSE` for more information.
 
 John Stilia - stilia.johny@gmail.com
 
-<!--
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
--->
+
 
 ---
 
