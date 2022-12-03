@@ -51,11 +51,6 @@
 
 <!-- add css that makes the corners rounded  -->
 
-<style>
-  img {
-    border-radius: 10px;
-  }
-<img src="./.assets/screenshot.png" height=50%  >
 
 This project is a POC  while researching for a bigger project that will be a GPS tracker.
 The idea is to have a device that will be able to send SMS messages with the current temperature and humidity of the place where it is installed.
