@@ -21,8 +21,6 @@
     <a href="./README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/stiliajohny/hardware-sms-temperature-sensor">View Demo</a>
-    ·
     <a href="https://github.com/stiliajohny/hardware-sms-temperature-sensor/issues/new?labels=i%3A+bug&template=1-bug-report.md">Report Bug</a>
     ·
     <a href="https://github.com/stiliajohny/hardware-sms-temperature-sensor/issues/new?labels=i%3A+enhancement&template=2-feature-request.md">Request Feature</a>
@@ -50,31 +48,33 @@
 
 ## About The Project
 
-[![hardware-sms-temperature-sensor Screen Shot][product-screenshot]](./.assets/screenshot.jpg)
 
-<!--
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
+<!-- add css that makes the corners rounded  -->
 
-Here's why:
+<style>
+  img {
+    border-radius: 10px;
+  }
+<img src="./.assets/screenshot.png" height=50%  >
 
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should element DRY principles to the rest of your life :smile:
+This project is a POC  while researching for a bigger project that will be a GPS tracker.
+The idea is to have a device that will be able to send SMS messages with the current temperature and humidity of the place where it is installed.
+It can be connected to a solar panel and a battery to be able to work off the grid.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
--->
+We are using a simple GSM module (SIM800L) and a temperature sensor (DHT11) to get the temperature and humidity of the place where the device is installed.
+
+The simplicity of the SIM800L is that is using RX/TX serial communication  and it is small in size that can be easily integrated in a small device.
+
+The DHT11 is a simple temperature sensor that is using a single wire to communicate with the microcontroller. Worth mentioning that the readings are not very accurate. It can be updated with a DHT22 sensor that is more accurate.
+
 
 ### Built With
 
-<!--
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
-- [Laravel](https://laravel.com)
--->
+- [Arduino](https://www.arduino.cc/)
+- [ESP8266](https://www.ebay.co.uk/b/NodeMCU-Development-Kits-Boards/65507/bn_7028724683)
+- [DHT11](https://www.ebay.co.uk/itm/303365781568)
+- [SIM800L](https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2510209.m570.l2632&_nkw=sim800l&_sacat=92074)
 
 ---
 
