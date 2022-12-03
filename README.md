@@ -50,7 +50,7 @@
 
 ## About The Project
 
-[![hardware-sms-temperature-sensor Screen Shot][product-screenshot]](./.assets/screenshot.png)
+[![hardware-sms-temperature-sensor Screen Shot][product-screenshot]](./.assets/screenshot.jpg)
 
 <!--
 There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
