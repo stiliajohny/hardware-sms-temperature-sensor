@@ -130,7 +130,7 @@ int sms800BaudRate = 9600;
 
 ## Usage
 
-After uploading the codet othe ESP8266 you can connect to the serial port and see the output of the device.
+After uploading the code to the ESP8266 you can connect to the serial port and see the output of the device.
 Now you need to observe the reception LED on the SIM800L module.
 
 <!-- add an HTML table with no borders -->
